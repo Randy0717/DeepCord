@@ -17,7 +17,13 @@ To download the google_transit directory, please use the link: https://hkustconn
 
 
 # D. DeepCord Structure
-The architecture of the DeepCord Simulation Framework can be better understood through ![Alt text](/DeepCord Simulation1.png "DeepCord Simulation"). More precisely, in the case of a specific vehicle agent, upon observing multiple orders and making a decision, the central router and Transit Simulator provide feedback. This feedback takes the form of a reward to the vehicle agent, and estimated travel time(ETA) and cost to the designated user. Subsequently, the vehicle agent forwards the transition tuples to the Sequential Independent Deep Reinforcement Learner(SeqIDRL)'s experience replay buffer, thus facilitating further training.
+The architecture of the DeepCord Simulation Framework can be better understood through the following diagram:
+
+![DeepCord Simulation](/DeepCord_Simulation1.png "DeepCord Simulation")
+
+In the case of a specific vehicle agent, upon observing multiple orders and making a decision, the central router and Transit Simulator provide feedback. This feedback takes the form of a reward to the vehicle agent, and estimated travel time (ETA) and cost to the designated user.
+
+Subsequently, the vehicle agent forwards the transition tuples to the Sequential Independent Deep Reinforcement Learner (SeqIDRL)'s experience replay buffer, thus facilitating further training.
 
 The SeqIDDQN is choosen as the backbone structures for our DeepCord project for both the Pure CP and CP+TR cases.
 
