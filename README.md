@@ -19,7 +19,7 @@ To download the google_transit directory, please use the link: https://hkustconn
 # D. DeepCord Structure
 The architecture of the DeepCord Simulation Framework can be better understood through the following diagram:
 
-![DeepCord Simulation](/DeepCord Simulation1.png "DeepCord Simulation")
+![DeepCord Simulation](/DeepCord_Simulation1.png "DeepCord Simulation")
 
 In the case of a specific vehicle agent, upon observing multiple orders and making a decision, the central router and Transit Simulator provide feedback. This feedback takes the form of a reward to the vehicle agent, and estimated travel time (ETA) and cost to the designated user.
 
